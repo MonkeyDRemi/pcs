@@ -16,7 +16,7 @@ $km = isset($_POST['km']) ? $_POST['km'] : null;
 // Connexion à la base de données
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "esgi";
 $dbname = "pcs5";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

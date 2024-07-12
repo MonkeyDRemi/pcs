@@ -11,7 +11,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
 // Connexion à la base de données
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "esgi";
 $dbname = "pcs5";
 
 $conn = new mysqli($servername, $username, $password, $dbname);

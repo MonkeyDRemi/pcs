@@ -29,7 +29,7 @@ try {
     die("Erreur: " . $e->getMessage());
 }
 
-$pdo = null; // Fermer la connexion PDO, car nous avons fini avec les requêtes
+$pdo = null; // Fermer la connexion PDO
 
 ?>
 

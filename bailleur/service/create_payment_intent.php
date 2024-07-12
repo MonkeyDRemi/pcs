@@ -13,7 +13,7 @@ if (!$paymentMethodId || !$id_commande) {
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "esgi";
 $dbname = "pcs5";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -63,7 +63,7 @@ try {
 function savePaymentDetails($amount, $paymentMethodId, $id_commande, $isValid, $errorReason = null) {
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "esgi";
     $dbname = "pcs5";
 
     $conn = new mysqli($servername, $username, $password, $dbname);

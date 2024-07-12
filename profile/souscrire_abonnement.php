@@ -13,7 +13,7 @@ $date_debut = date('Y-m-d');
 $date_fin = date('Y-m-d', strtotime('+1 year'));
 
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=pcs4', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=pcs5', 'root', 'esgi');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $sql = "SELECT COUNT(*) FROM abonnement_commande WHERE id_utilisateur = :id_utilisateur AND date_fin > NOW()";
