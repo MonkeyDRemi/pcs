@@ -1,0 +1,17 @@
+{
+  "welcome_title": "Paris Caretaker Services (PCS)",
+  "welcome_description": "PCS is a chain of property concierge services specializing in seasonal rental management, similar to AirBnB, founded in Paris in 2018. We are committed to providing superior service, ranging from reservation management to comprehensive property maintenance.",
+  "services_title": "Our Services",
+  "services_list": [
+    "Check-in and check-out for guests",
+    "House cleaning",
+    "Publishing listings with high-quality photos",
+    "24/7 customer service",
+    "Rental rate optimization",
+    "Supply of household linen",
+    "Maintenance work and minor repairs",
+    "Plumbing, electrical, and furniture repair services",
+    "Airport transportation"
+  ],
+  "learn_more": "Learn more about our services"
+}

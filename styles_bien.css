@@ -1,0 +1,143 @@
+/*Header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0px 50px !important;
+    background-color: #f8f9fa !important;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0;
+    
+}
+
+.logo img {
+    height: 80px; /* Augmenter la taille du logo */
+}
+
+.search-bar {
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.burger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav#menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+nav#menu.active {
+    display: block; /* Afficher le menu lorsqu'il a la classe active */
+}
+nav#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+
+}
+
+#updateProfilForm, #reservations, #abonnement{
+    margin-top: 20px;
+}
+
+nav#menu ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+nav#menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav#menu ul li:last-child {
+    border-bottom: none;
+}
+
+
+
+/* Formulaire */
+
+form {
+    max-width: 1200px;
+    margin: 2% auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+form label {
+    margin-right: 0px;
+    font-weight: bold;
+}
+form input {
+    margin-right: 0px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+#biens {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+.bien {
+    flex: 0 0 calc(50% - 10px);
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(194, 125, 22, 0.1);
+}
+.bien h3 {
+    margin-top: 0;
+    color: #daab3a;
+}
+.bien p {
+    margin: 4px 0;
+}
+.bien strong {
+    color: #333;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+}
+

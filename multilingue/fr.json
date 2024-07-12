@@ -1,0 +1,18 @@
+{
+    "welcome_title": "Services de Conciergerie Paris (SCP)",
+    "welcome_description": "SCP est une chaîne de services de conciergerie immobilière spécialisée dans la gestion de la location saisonnière, similaire à AirBnB, fondée à Paris en 2018. Nous nous engageons à offrir un service de qualité supérieure, allant de la gestion des réservations à l'entretien complet des biens immobiliers.",
+    "services_title": "Nos Services",
+    "services_list": [
+      "Check-in et check-out des clients",
+      "Nettoyage du logement",
+      "Publication des annonces avec photos de qualité",
+      "Service client disponible 24h/24 et 7j/7",
+      "Optimisation des tarifs de location",
+      "Fourniture de linge de maison",
+      "Travaux d’entretien et petites réparations",
+      "Services de plomberie, électricité, et réparation du mobilier",
+      "Transport de et vers l'aéroport"
+    ],
+    "learn_more": "En savoir plus sur nos services"
+  }
+  
