@@ -21,7 +21,7 @@ try {
         'payment_method' => $paymentMethodId,
         'confirmation_method' => 'manual',
         'confirm' => true,
-        'return_url' => 'http://localhost:8000/bien/payment_confirmation.php', 
+        'return_url' => 'http://localhost/bien/payment_confirmation.php', 
     ]);
 
     if ($paymentIntent->status == 'succeeded') {
@@ -69,7 +69,7 @@ function reserveProperty($date_debut, $date_fin, $id_bien) {
 function savePaymentDetails($amount, $paymentMethodId, $id_bien, $isValid, $errorReason = null) {
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "esgi";
     $dbname = "pcs5";
 
     $conn = new mysqli($servername, $username, $password, $dbname);

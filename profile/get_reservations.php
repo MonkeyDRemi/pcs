@@ -2,7 +2,7 @@
 session_start();
 header('Content-Type: application/json');
 
-require_once '../signup/db.php'; // Inclure le fichier de configuration de la connexion PDO
+require_once '../include/db.php'; // Inclure le fichier de configuration de la connexion PDO
 
 if (!isset($_SESSION['id_utilisateur'])) {
     echo json_encode(['success' => false, 'message' => 'Utilisateur non authentifié']);

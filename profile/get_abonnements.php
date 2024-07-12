@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once '../include/db.php';
+include('../include/db.php');
 
 if (!isset($_SESSION['id_utilisateur'])) {
     echo json_encode(['success' => false, 'message' => 'Utilisateur non connecté']);

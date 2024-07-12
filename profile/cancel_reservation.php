@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../include/db.php'); // Inclusion du fichier de configuration PDO
+include('../include/db.php'); 
 header('Content-Type: application/json');
 
 if (!isset($_SESSION['id_utilisateur'])) {

@@ -8,6 +8,12 @@ if (!isset($_SESSION['id_utilisateur'])) {
 }
 
 $id_utilisateur = $_SESSION['id_utilisateur'];
+
+if (!isset($_POST['interventionId']) || !isset($_POST['status'])) {
+    echo json_encode(['success' => false, 'message' => 'Données incomplètes']);
+    exit();
+}
+
 $id_commande = $_POST['interventionId'];
 $status = $_POST['status'];
 $nbr_heure = isset($_POST['nbr_heure']) ? $_POST['nbr_heure'] : null;
@@ -23,15 +29,21 @@ $sql = "SELECT p.montant, p.type_tarification
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$id_commande]);
 $prestation = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$prestation) {
+    echo json_encode(['success' => false, 'message' => 'Prestation non trouvée']);
+    exit();
+}
+
 $stmt->closeCursor(); // Fermer le curseur pour permettre la réutilisation de la connexion
 
 $montant_base = $prestation['montant'];
 $type_tarification = $prestation['type_tarification'];
 
 // Calculer le montant en fonction du type de tarification
-if ($type_tarification == 'heure') {
+if ($type_tarification == 'heure' && $nbr_heure !== null) {
     $montant = $montant_base * $nbr_heure;
-} elseif ($type_tarification == 'kilometre') {
+} elseif ($type_tarification == 'kilometre' && $km !== null) {
     $montant = $montant_base * $km;
 } else {
     $montant = $montant_base;
@@ -53,5 +65,5 @@ try {
     echo json_encode(['success' => false, 'message' => 'Erreur lors de la mise à jour de l\'intervention: ' . $e->getMessage()]);
 }
 
-$stmt->close();
+$stmt->closeCursor();
 ?>
