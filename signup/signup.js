@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
             bailleur: bailleur ? 1 : 0
         };
 
-        fetch('http://localhost:8000/signup', { 
+        fetch('signup.php', { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

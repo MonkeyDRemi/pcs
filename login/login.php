@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/db.php'; 
+require_once '../include/db.php';
 session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {

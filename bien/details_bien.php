@@ -6,7 +6,7 @@
         // Connexion à la base de données
         $servername = "localhost";
         $username = "root";
-        $password = "";
+        $password = "esgi";
         $dbname = "pcs5";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -51,7 +51,7 @@
                 $result_photos->data_seek(0); // Reset result set pointer
                 while ($photo = $result_photos->fetch_assoc()) {
                     echo '<div class="carousel-item ' . ($photoIndex === 0 ? 'active' : '') . '">';
-                    echo '<img src="' . $photo['url'] . '" class="d-block w-100" alt="Photo du bien">';
+                    echo '<img src="../bailleur/img/bien/' . $photo['url'] . '" class="d-block w-100" alt="Photo du bien">';
                     echo '</div>';
                     $photoIndex++;
                 }

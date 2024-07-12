@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('../include/header.php');
-require_once '../include/db.php'; // Inclure le fichier de connexion PDO
+require_once '../include/db.php';
 
 if (!isset($_SESSION['id_utilisateur'])) {
     header('Location: ../../login/index.php');

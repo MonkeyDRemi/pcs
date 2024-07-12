@@ -38,7 +38,7 @@ try {
 function reserveProperty($date_debut, $date_fin, $id_bien) {
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "esgi";
     $dbname = "pcs5";
 
     $conn = new mysqli($servername, $username, $password, $dbname);

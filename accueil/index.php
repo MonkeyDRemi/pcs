@@ -24,7 +24,7 @@
                 const indicators = bien.photos.map((_, i) => `<li data-target="#${carouselId}" data-slide-to="${i}" class="${i === 0 ? 'active' : ''}"></li>`).join('');
                 const slides = bien.photos.map((photo, i) => `
                     <div class="carousel-item ${i === 0 ? 'active' : ''}">
-                        <img src="${photo}" alt="${bien.title}" class="d-block w-100" style="border-radius: 8px;">
+                        <img src="../bailleur/img/bien/${photo}" alt="${bien.title}" class="d-block w-100" style="border-radius: 8px;">
                     </div>
                 `).join('');
 
